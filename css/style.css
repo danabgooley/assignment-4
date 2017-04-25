@@ -106,6 +106,7 @@ header nav ul li a {
   vertical-align: top;
 }
 #sidebar {
+  float: right;
   width: 240px;
   display: inline-block;
   vertical-align: top;
