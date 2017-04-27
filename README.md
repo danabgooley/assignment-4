@@ -1,9 +1,6 @@
 Dana's Notes:
 
-Couldn't figure out how/why for this: - Prevent a form submission with the ```event.preventDefault()``` function
-Just turned off all the other functions I had.
-
-Couldn't get toggle to work, had to do it manually (slideDown/slideUp)
+Everything works now!! Yay!
 
 
 

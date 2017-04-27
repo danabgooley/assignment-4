@@ -1,13 +1,15 @@
-// $(".hide")event.preventDefault();
+
 
 $(document).ready(function(){
+
 
 	// READ MORE BLOG
 
 	$(".readmore").click(expand);
 
 	function expand(){
-		$("#show-this-on-click").show();
+	event.preventDefault()
+		$("#show-this-on-click").slideDown();
 		$(".readmore").hide();
 		$(".readless").show();
 	}
@@ -15,7 +17,8 @@ $(document).ready(function(){
 	$(".readless").click(collapse);
 
 	function collapse(){
-		$("#show-this-on-click").hide();
+	event.preventDefault()
+		$("#show-this-on-click").slideUp();
 		$(".readless").hide();
 		$(".readmore").show();
 	}
@@ -23,19 +26,20 @@ $(document).ready(function(){
 	// LEARN MORE SIDEBAR
 
 	$(".learnmore").click(slideDown);
-
+	event.preventDefault()
 	function slideDown () {
 		$(".learnmore").hide();
-		$(".readless").show();
-		$("#learnmoretext").show();
+		$(".learnless").show();
+		$("#learnmoretext").slideDown();
 	}
 
-	$(".readless").click(slideUp);
-
+	$(".learnless").click(slideUp);
+	event.preventDefault()
 	function slideUp () {
-		$(".readless").hide();
+		$(".learnless").hide();
 		$(".learnmore").show();
-		$("#learnmoretext").hide()
+		$("#learnmoretext").slideUp()
 	}
 
 });
+
